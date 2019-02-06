@@ -1,0 +1,17 @@
+.cell {
+    width: 30px;
+    height: 30px;
+    border: green solid 2px;
+}
+.rejected-cell {
+    background-color: gray;
+}
+.playing-cell {
+    background-color: skyblue;
+}
+.selected {
+    background-color: #35ff13;
+}
+.path {
+    background-color: yellow;
+}
