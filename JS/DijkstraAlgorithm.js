@@ -29,9 +29,9 @@ const rejectedCells = [0,10,15,17,22,23,24,25,27,37,44,54,56,57,58,60,61,62,64];
     this.rejectedCells = rejectedCells;
     this.depth = depth;
     this.width = width;
-    typeof startNode === 'string' ? this.startNode = Number(startNode) : this.startNode = startNode;
-    typeof finishNode === 'string' ? this.finishNode = Number(finishNode) : this.finishNode = finishNode;
-  }
+    this.startNode = parseInt(startNode);
+    this.finishNode = parseInt(finishNode);
+    }
   fillData() {
     const vertices = [];
     for (let i = 0; i < this.depth; i++) {
